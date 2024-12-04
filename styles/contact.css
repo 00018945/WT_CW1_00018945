@@ -1,0 +1,335 @@
+/* General Styles for Contact Page */
+.contact-main {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero-contact {
+    background: linear-gradient(to bottom, rgba(47, 167, 222, 0.8), rgba(17, 55, 39, 0.9));
+    height: 50vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-contact .hero-container h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-contact .hero-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Contact Info Section */
+.contact-info {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #004225;
+    margin-bottom: 20px;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info-item img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.info-item h3 {
+    color: #004225;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.info-item p a {
+    color: #555;
+    text-decoration: none;
+}
+
+.info-item p a:hover {
+    color: #004225;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004225;
+}
+
+.contact-form p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Form Group Styles */
+.contact-form .form-group {
+    margin: 20px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-form .form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: none;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+    border-color: #004225;
+    box-shadow: 0 4px 8px rgba(0, 66, 37, 0.2);
+    outline: none;
+}
+
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Submit Button */
+.contact-form .cta-button {
+    display: inline-block;
+    background-color: #004225;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.contact-form .cta-button:hover {
+    background-color: #006837;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.contact-form .cta-button:active {
+    transform: translateY(0);
+}
+
+/* Map Section */
+.contact-map {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+}
+
+.contact-map h2 {
+    font-size: 2rem;
+    color: #004225;
+    margin-bottom: 20px;
+}
+
+.contact-map p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Action Buttons */
+.action-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.circle-button {
+    background: linear-gradient(to right, #004225, #006837);
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.circle-button:active {
+    transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .contact-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .contact-map {
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-form p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .contact-form .cta-button {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+    outline-color: red;
+}
+
+input:valid,
+textarea:valid {
+    border-color: green;
+}
+
+input:focus:valid,
+textarea:focus:valid {
+    outline-color: green;
+}

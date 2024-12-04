@@ -1,0 +1,186 @@
+/* General Styles for Team Page */
+.team-main {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.team-hero {
+    background-image: url('../images/fsoci.png');
+    height: 50vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.team-hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Introduction Section */
+.team-intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.team-intro h2 {
+    font-size: 2rem;
+    color: #004225;
+    margin-bottom: 20px;
+}
+
+.team-intro p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Team Timeline Section */
+.team-members {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.team-members h2 {
+    font-size: 2rem;
+    color: #004225;
+    margin-bottom: 40px;
+}
+
+.team-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Line in the Timeline */
+.team-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #004225;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+/* Timeline Items */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item.alternate {
+    justify-content: flex-end;
+}
+
+/* Circular Image */
+.timeline-item .timeline-image {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 4px solid #004225;
+}
+
+.timeline-item .timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content Box */
+.timeline-item .timeline-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item.alternate .timeline-content {
+    text-align: right;
+}
+
+.timeline-item .timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Achievements */
+.timeline-item .achievement {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-links li {
+    list-style: none;
+}
+
+.social-links li a img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-links li a img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-item.alternate {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-item .timeline-content {
+        text-align: center;
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .timeline-item .timeline-image {
+        margin-bottom: 20px;
+    }
+
+    .team-timeline::before {
+        left: 10%;
+    }
+}
